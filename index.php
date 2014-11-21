@@ -1,15 +1,26 @@
 <?php
-//BTP(better than tp)一款对thinkphp进行改进对框架
-//作者:陈燃
+// +----------------------------------------------------------------------
+// | ThinkPHP [ WE CAN DO IT JUST THINK ]
+// +----------------------------------------------------------------------
+// | Copyright (c) 2006-2014 http://thinkphp.cn All rights reserved.
+// +----------------------------------------------------------------------
+// | Licensed ( http://www.apache.org/licenses/LICENSE-2.0 )
+// +----------------------------------------------------------------------
+// | Author: liu21st <liu21st@gmail.com>
+// +----------------------------------------------------------------------
 
-//检测PHP版本号
-if(version_compare(PHP_VERSION,'5.3.0','<')) die('需要您对PHP版本高于5.3.0');
+// 应用入口文件
 
-//开启调试模式，建议在生产环境将其注释或设为false
+// 检测PHP环境
+if(version_compare(PHP_VERSION,'5.3.0','<'))  die('require PHP > 5.3.0 !');
+
+// 开启调试模式 建议开发阶段开启 部署阶段注释或者设为false
 define('APP_DEBUG',True);
 
-//定义应用目录
+// 定义应用目录
 define('APP_PATH','./Application/');
 
-//引入ThinkPHP入口文件
+// 引入ThinkPHP入口文件
 require './ThinkPHP/ThinkPHP.php';
+
+// 亲^_^ 后面不需要任何代码了 就是如此简单
